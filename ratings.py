@@ -28,7 +28,7 @@ with open('ratings.csv', newline='\n', encoding="utf8") as csvfile:
 ratings_serialized = []
 
 
-def serialized_ratings(ratings: list[RatingDao]):
+def serialized_ratings(ratings):
     for rating in ratings:
         print(rating.__dict__)
         ratings_serialized.append(rating.__dict__)

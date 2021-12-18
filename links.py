@@ -24,7 +24,7 @@ with open('links.csv', newline='\n', encoding="utf8") as csvfile:
 links_serialized = []
 
 
-def serialized_links(links: list[Link]):
+def serialized_links(links):
     for link in links:
         print(link.__dict__)
         links_serialized.append(link.__dict__)

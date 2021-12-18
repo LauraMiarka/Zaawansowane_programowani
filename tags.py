@@ -28,7 +28,7 @@ with open('tags.csv', newline='\n', encoding="utf8") as csvfile:
 tags_serialized = []
 
 
-def serialized_tags(tags: list[TagDao]):
+def serialized_tags(tags):
     for tag in tags:
         print(tag.__dict__)
         tags_serialized.append(tag.__dict__)
